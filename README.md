@@ -10,7 +10,7 @@ python main.py
 
 ## Features
 - Enter the total meal price
-- Choose tip percentage (10%, 12%, or 15%)
+- Choose a tip from presets (10%, 12%, 15%) or enter a custom percentage
 - Split the bill among multiple people
 - Input validation for bill, tip percentage, and split count
 - Friendly and clear error messages
@@ -21,12 +21,24 @@ python main.py
 Welcome to the Tip Calculator!
 
 Total meal price: 100
-How much tip would you like to give? (10, 12, or 15): 15
+Choose a tip option:
+  1) 10%
+  2) 12%
+  3) 15%
+  4) Custom tip
+Select 1, 2, 3, or 4: 3
 How many people to split the bill?: 4
 
-Total cost: $115.00
-Tip percentage: 15%
-Each person should pay: $28.75
+----------------------------------
+Bill summary
+----------------------------------
+Bill amount         : $100.00
+Tip percentage      : 15.00%
+Tip amount          : $15.00
+Total with tip      : $115.00
+Split between people: 4
+Each person pays    : $28.75
+----------------------------------
 ```
 
 ## Requirements
@@ -36,7 +48,7 @@ Each person should pay: $28.75
 ## How It Works
 
 1. Enter the total meal price (must be positive)
-2. Select the tip percentage (10, 12, or 15)
+2. Select a preset tip percentage or enter a custom value
 3. Enter how many people to split the bill (must be at least 1)
 4. Get the amount each person needs to pay (formatted to 2 decimals)
 
